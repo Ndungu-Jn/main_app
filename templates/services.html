@@ -1,11 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
-  </head>
-  <body>
-    <h2>this is the services page</h2>
-  </body>
-</html>
+{% extends 'master.html' %} 
+
+{% block title %}
+<title>Services</title>
+{% endblock %} 
+
+{% block content %}
+
+    <h2 class="text-center text-danger">Our services</h2>
+
+    {% for service in services %}
+        <p>{{ service }}</p>
+    {% endfor %}
+
+    <h3>Ksh {{ price }}</h3>
+    <h3>On date {{ date }}</h3>
+
+    
+    {% if price > 8000 %}
+        <p>Our best prices in town</p>        
+    {% endif %}
+
+    
+    {% if price > 5000 %}
+        <p>Our best prices in town for December</p>
+        
+    {% else %}
+        <p>Contact us for details</p>
+    {% endif %}
+        
+        
+
+{% endblock content %}

@@ -1,17 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-  </head>
-  <body>
-    <h2>This is the home page</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a
-      laudantium officiis sed culpa, aliquid amet quo odio corrupti, optio
-      provident, libero accusantium! Repellat laborum asperiores est
-      consequuntur perferendis inventore?
-    </p>
-  </body>
-</html>
+{% extends 'master.html' %} 
+
+{% block title %}
+<title>Home</title>
+
+{% endblock %} 
+
+{% block content %}
+
+<h2 class="text-center text-danger">Welcome to Django</h2>
+<p>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto quo
+  provident voluptatum distinctio ex? Tempora cum dolore repudiandae quibusdam
+  illum libero, nam debitis, animi, nobis repellendus voluptates minus ullam
+  doloribus! Sed hic tempora quo esse est quas cupiditate, nihil, dolorem,
+  perspiciatis nesciunt animi vero! Fugiat ut voluptate accusamus, non
+  praesentium modi temporibus nisi optio quia ullam eius necessitatibus, ea
+  nihil! Eius assumenda quasi cum impedit voluptatibus incidunt veritatis ipsum
+  molestiae. Eius nostrum maxime atque reprehenderit beatae nesciunt non animi
+  corporis enim, ducimus, aspernatur odio dolorum corrupti ullam. Assumenda,
+  dolores nesciunt?
+</p>
+
+{% endblock content %}
